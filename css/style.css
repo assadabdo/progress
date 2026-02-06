@@ -1,0 +1,171 @@
+:root {
+  --primary-color: #4f1d4d;
+  --secondary-color: #333333;
+}
+
+/* Main styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+.container {
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.container .introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .introduction p {
+  padding: 10px;
+  line-height: 1.33;
+  text-align: center;
+  color: #655a5a;
+}
+.container .introduction .text {
+  font-size: 26px;
+  text-align: center;
+  margin: 20px auto;
+  color: #72046d;
+  width: 235px;
+}
+.container .rating .one,
+.two,
+.three {
+  margin: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7ebf6;
+  align-items: center;
+  border-radius: 6px;
+}
+.container .rating div .stars {
+  padding: 10px;
+  padding-top: 17px;
+  margin-bottom: -21px;
+}
+.container .rating div i {
+  color: gold;
+}
+.container .rating div span {
+  font-weight: bold;
+  margin: 20px;
+}
+/* section two */
+.views .calton,
+.views .anne,
+.views .iren {
+  padding: 22px;
+  border-radius: 13px;
+  padding: 22px;
+  color: white;
+  background-color: var(--primary-color);
+  margin: 20px;
+}
+.views div .bio {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.views div .bio img {
+  border-radius: 50%;
+  margin-right: 26px;
+}
+.views div .bio .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1.8;
+}
+.views .bio .desc h5:nth-child(2) {
+  color: #ce0b5a;
+}
+.views div p {
+  line-height: 1.5;
+}
+
+@media (min-width: 450px) and (max-width: 768px) {
+  .container .rating {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .rating .one,
+  .two,
+  .three {
+    width: 60%;
+  }
+  .views {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .views .calton,
+  .views .anne,
+  .views .iren {
+    width: 60%;
+  }
+  .container .introduction p {
+    width: 330px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .views {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .views .calton,
+  .views .anne,
+  .views .iren {
+    width: 43%;
+  }
+}
+@media (min-width: 768px) {
+  .views {
+    display: flex;
+    margin: 40px;
+    margin-top: 0px;
+    padding: 20px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 40px;
+    margin-bottom: 0px;
+  }
+  .container .rating .one,
+  .two,
+  .three {
+    flex-direction: row;
+    width: 430px;
+  }
+  .container .rating .one {
+    transform: translateX(-45px);
+  }
+  .container .rating .two {
+    transform: translateX(-20px);
+  }
+  .container .introduction .text {
+    margin-left: 15px;
+    text-align: start;
+    font-size: 32px;
+  }
+  .container .introduction p {
+    max-width: 426px;
+    text-align: start;
+  }
+  .container .rating div .stars {
+    margin-bottom: -4px;
+    padding-top: 0px;
+  }
+}
